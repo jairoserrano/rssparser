@@ -37,7 +37,7 @@ class GtaRSSParser {
     public function getItem() {
         $item = @$this->_xml_rss->channel->item[$this->_current_item];
         if (isset($item)) {
-            echo $this->_current_item++;
+            $this->_current_item++;
             return new GtaRSSItem($item);
         } else {
             return FALSE;
