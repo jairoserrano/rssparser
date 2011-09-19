@@ -23,4 +23,7 @@ h1 a {
 .item {
     margin-left: 1%;
 }
+#header {
+    background-color: white;
+}
 
