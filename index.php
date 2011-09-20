@@ -1,5 +1,5 @@
 <?php
-include 'GtaRSSParcer.php';
+include 'src/GtaRSSParcer.php';
 $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin/rss.xml');
 ?>
 <!DOCTYPE html>
@@ -8,10 +8,10 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
         <title>SAVIO Móvil</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" media="all" href="estilo.css" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
+        <link rel="stylesheet" href="js/jquery.mobile-1.0b3.min.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+        <script src="js/jquery-1.6.2.min.js"></script>
+        <script src="js/jquery.mobile-1.0b3.min.js"></script>
     </head>
     <body>
         <div data-role="page"  id="novedades" data-theme="c"> 
@@ -50,7 +50,7 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
                 </div>
             </div> 
             <div data-role="footer"  data-position="fixed">
-                Pruebas realizadas por Jairo Serrano 2011
+                Pruebas realizadas por Jairo Serrano 2011 - <?php echo date ("F d Y H:i:s.", $rss->getCached());?>
             </div>
         </div>
 
