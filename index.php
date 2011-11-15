@@ -50,7 +50,7 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
                 </div>
             </div> 
             <div data-role="footer"  data-position="fixed">
-                Universidad Tecnológica de Bolívar 2011 - <?php echo date ("F d Y H:i:s.", $rss->getCached());?>
+                Universidad Tecnológica de Bolívar 2011 - <?php echo date("F d Y H:i:s.", $rss->getCached()); ?>
             </div>
         </div>
 
@@ -103,7 +103,8 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
             </div><!-- /header -->
 
             <div data-role="content" data-theme="c">	
-                <h2>¿Necesita ayuda?</h2>
+                <iframe class="autoHeight" src="http://www.utbvirtual.edu.co/dev_support/" id="support-frame" frameborder="0" height="1024" scrolling="auto" width="100%">
+                </iframe>
                 <p></p>	
             </div><!-- /content -->
 
