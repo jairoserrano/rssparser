@@ -7,11 +7,11 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
     <head>
         <title>SAVIO Móvil</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel="stylesheet" media="all" href="estilo.css" />
-        <link rel="stylesheet" href="js/jquery.mobile-1.0b3.min.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile.structure-1.0rc2.min.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script src="js/jquery-1.6.2.min.js"></script>
-        <script src="js/jquery.mobile-1.0b3.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.js"></script>
     </head>
     <body>
         <div data-role="page"  id="novedades" data-theme="c"> 
@@ -50,7 +50,7 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
                 </div>
             </div> 
             <div data-role="footer"  data-position="fixed">
-                Pruebas realizadas por Jairo Serrano 2011 - <?php echo date ("F d Y H:i:s.", $rss->getCached());?>
+                Universidad Tecnológica de Bolívar 2011 - <?php echo date ("F d Y H:i:s.", $rss->getCached());?>
             </div>
         </div>
 
@@ -84,7 +84,7 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
             </div><!-- /content -->
 
             <div data-role="footer"  data-position="fixed">
-                Pruebas realizadas por Jairo Serrano 2011
+                Universidad Tecnológica de Bolívar 2011
 
             </div><!-- /footer -->
         </div><!-- /page savio -->
@@ -108,7 +108,7 @@ $rss = new GtaRSSParser('http://www.utbvirtual.edu.co/centro-de-noticias/boletin
             </div><!-- /content -->
 
             <div data-role="footer"  data-position="fixed">
-                Pruebas realizadas por Jairo Serrano 2011
+                Universidad Tecnológica de Bolívar 2011
             </div><!-- /footer -->
         </div><!-- /page soporte -->
 
